@@ -16,9 +16,7 @@ Follow these steps to get a copy of the project up and running on your local mac
 📦 Prerequisites
 You'll need the following software installed:
 
-->Python 3.8+
-
+->Python 
 ->Git
 
-🛠 Installation
-Clone the Repository:
+
