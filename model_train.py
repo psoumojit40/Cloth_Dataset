@@ -90,6 +90,9 @@ plt.legend()
 plt.show()
 
 # Predict on test dataset
+
+# test_gen = ImageDataGenerator(rescale=1./255)
+
 # test_data = test_gen.flow_from_directory(
 #     "./dataset/split_data/test",
 #     target_size=(224, 224),
@@ -97,6 +100,20 @@ plt.show()
 #     class_mode="binary",
 #     shuffle=False
 # )
+
+# pred = model.predict(test_data)
+# pred_labels = (pred > 0.5).astype(int)
+
+# cm = confusion_matrix(test_data.classes, pred_labels)
+
+# plt.figure(figsize=(6, 4))
+# sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')
+# plt.xlabel("Predicted")
+# plt.ylabel("Actual")
+# plt.title("Confusion Matrix")
+# plt.show()
+
+# print(classification_report(test_data.classes, pred_labels))
 
 model = load_model("clothes_classifier_resnet50.h5")
 
